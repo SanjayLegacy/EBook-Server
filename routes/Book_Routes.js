@@ -14,7 +14,7 @@ router.post("/addNewBook", validateAdminToken, bookController.addNewBook);
 
 router.put("/updateBook/:id", validateAdminToken, bookController.updateBook);
 
-router.put("/filterBooks", validateUserToken, bookController.getBooksByFilter);
+router.post("/filterBooks", validateUserToken, bookController.getBooksByFilter);
 
 router.delete("/deleteBook/:id", validateAdminToken, bookController.deleteBook);
 

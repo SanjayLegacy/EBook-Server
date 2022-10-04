@@ -1,5 +1,7 @@
 const db = require("../models");
 const asyncHandler = require("express-async-handler");
+const { Op, or } = require("sequelize");
+const { sequelize } = require("../models");
 
 const EBooks = db.ebooks;
 
